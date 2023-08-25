@@ -8,7 +8,7 @@ class CustomNote extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 16),
+      padding: const EdgeInsets.only(top: 8),
       child: Container(
         padding: EdgeInsets.only(top: 8),
         decoration: BoxDecoration(
@@ -42,7 +42,7 @@ class CustomNote extends StatelessWidget {
               Text(
                 'Today iam going to eat some food with my family',
                 style: TextStyle(
-                    color: Colors.black.withOpacity(.6), fontSize: 20),
+                    color: Colors.black.withOpacity(.6), fontSize: 18),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 18),

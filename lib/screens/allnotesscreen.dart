@@ -9,7 +9,11 @@ class AllNotesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: AllNotesBody()
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          child: Icon(Icons.add),
+        ),
+        body: const AllNotesBody()
       ),
     );
   }
