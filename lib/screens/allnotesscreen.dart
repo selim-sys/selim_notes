@@ -11,6 +11,7 @@ class AllNotesScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
           floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.greenAccent,
             onPressed: () {
               showModalBottomSheet(
                   shape: RoundedRectangleBorder(
