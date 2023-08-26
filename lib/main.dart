@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:selimnotes/constnts.dart';
+import 'package:selimnotes/models/note_model.dart';
 import 'package:selimnotes/screens/allnotesscreen.dart';
 void main()async{
   runApp(SelimNotes());
@@ -8,6 +9,8 @@ void main()async{
   await Hive.initFlutter();
 
   await Hive.openBox(kNotesBox);
+
+  Hive.registerAdapter(NoteModelAdapter());
 }
 class SelimNotes extends StatelessWidget {
   const SelimNotes({super.key});
